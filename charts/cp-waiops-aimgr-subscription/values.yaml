@@ -4,3 +4,4 @@
 
 namespace: cp4waiops
 catalog_source: ibm-operator-catalog
+subscription_channel: v3.3

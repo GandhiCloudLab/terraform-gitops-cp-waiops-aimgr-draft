@@ -96,16 +96,20 @@ variable "ibmcloud_api_key" {
 variable "storageClass" {
   type        = string
   description = "WAIOps Storage Class"
-  default     = "ibmc-file-gold-gid"
 }
 
 variable "storageClassLargeBlock" {
   type        = string
   description = "WAIOps Storage Class Block"
-  default     = "ibmc-file-gold-gid"
 }
 
 variable "catalog_source_name" {
   type        = string
   description = "WAIOps Catalog Source"
+}
+
+variable "subscription_channel" {
+  type        = string
+  description = "WAIOps subscription channel"
+  default     = "v3.3"
 }

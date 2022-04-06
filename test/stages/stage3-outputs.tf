@@ -5,11 +5,11 @@
 
      environment = {
        OUTPUT = jsonencode({
-         name        = module.cp-waiops-aimgr.name
-         branch      = module.cp-waiops-aimgr.branch
-         layer       = module.cp-waiops-aimgr.layer
-         layer_dir   = module.cp-waiops-aimgr.layer == "infrastructure" ? "1-infrastructure" : (module.cp4s.layer == "services" ? "2-services" : "3-applications")
-         type        = module.cp-waiops-aimgr.type
+         name        = module.gitops_cp_waiops_aimgr.name
+         branch      = module.gitops_cp_waiops_aimgr.branch
+         layer       = module.gitops_cp_waiops_aimgr.layer
+         layer_dir   = module.gitops_cp_waiops_aimgr.layer == "infrastructure" ? "1-infrastructure" : (module.gitops_cp_waiops_aimgr.layer == "services" ? "2-services" : "3-applications")
+         type        = module.gitops_cp_waiops_aimgr.type
        })
      }
    }
