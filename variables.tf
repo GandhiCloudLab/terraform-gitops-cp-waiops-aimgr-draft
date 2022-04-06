@@ -66,6 +66,7 @@ variable "git_credentials" {
 variable "namespace" {
   type        = string
   description = "The namespace where the application should be deployed"
+  default     = "cp4waiops"
 }
 
 variable "kubeseal_cert" {
@@ -104,3 +105,7 @@ variable "storageClassLargeBlock" {
   default     = "ibmc-file-gold-gid"
 }
 
+variable "catalog_source_name" {
+  type        = string
+  description = "WAIOps Catalog Source"
+}
